@@ -14,7 +14,7 @@ gulp.task("scripts", () => {
 
 // Watch files for changes
 gulp.task("watch", ["scripts"], () => {
-    gulp.watch("src/*.ts", "scripts");
+    gulp.watch("src/*.ts", ["scripts"]);
 });
 
 gulp.task("default", ["watch"]);
