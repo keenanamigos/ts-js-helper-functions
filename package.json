@@ -1,0 +1,22 @@
+{
+  "name": "ts-js-helper-functions",
+  "version": "0.0.1",
+  "description": "Helper classes and functions to provide functionality for common operations written in TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "keenan johnson",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.0.10",
+    "@types/mocha": "^2.2.44",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "tslint": "^5.8.0"
+  },
+  "dependencies": {
+    "ts-node": "^4.0.2",
+    "typescript": "^2.6.2"
+  }
+}
