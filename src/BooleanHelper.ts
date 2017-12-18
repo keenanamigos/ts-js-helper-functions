@@ -7,8 +7,8 @@
     /**
      * @function
      * Convert a given boolean to a corresponding integer value
-     * @param value - Boolean to be converted.
-     * @returns number - Return the proper integer value given a true or false parameter.
+     * @param {boolean} value - Boolean to be converted.
+     * @returns {number} - Return the proper integer value given a true or false parameter.
      */
      public static convertBooleanToInt(value: boolean): number {
         if (value === true) {
