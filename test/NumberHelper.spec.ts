@@ -51,4 +51,24 @@ describe("NumberHelper", () => {
             expect(NumberHelper.isGreaterThanZero(someValue)).to.equal(false);
         });
     });
+
+    describe("isZeroOrGreater", () => {
+        it("should return true if the given value is 0", () => {
+            const someValue = 0;
+
+            expect(NumberHelper.isZeroOrGreater(someValue)).to.equal(true);
+        });
+
+        it("should return true if the given value is greater than 0", () => {
+            const someValue = 15;
+
+            expect(NumberHelper.isZeroOrGreater(someValue)).to.equal(true);
+        });
+
+        it("should return false if the given value is less than 0", () => {
+            const someValue = -5;
+
+            expect(NumberHelper.isZeroOrGreater(someValue)).to.equal(false);
+        });
+    });
 });
