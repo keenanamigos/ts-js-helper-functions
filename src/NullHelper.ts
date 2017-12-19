@@ -3,7 +3,7 @@
  * Class to peform checks and operations on null values.
  */
 
-class NullHelper {
+export class NullHelper {
     /**
      * @function
      * Convert a null value to the integer 0 or return the given value.
