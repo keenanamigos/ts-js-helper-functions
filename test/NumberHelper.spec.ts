@@ -31,4 +31,24 @@ describe("NumberHelper", () => {
             expect(NumberHelper.getRandomInteger.bind(NumberHelper.getRandomInteger, minValue, maxValue)).to.throw(Error, `${minValue} AND/OR ${maxValue} are not valid input. Please enter Numbers greater than zero.`);
         });
     });
+
+    describe("isGreaterThanZero", () => {
+        it("should return true if a given number is greater than 0", () => {
+            const someValue = 95;
+
+            expect(NumberHelper.isGreaterThanZero(someValue)).to.equal(true);
+        });
+
+        it("should return false if a given number is less than 0", () => {
+            const someValue = -95;
+
+            expect(NumberHelper.isGreaterThanZero(someValue)).to.equal(false);
+        });
+
+        it("should return false if a given number is equal to 0", () => {
+            const someValue = 0;
+
+            expect(NumberHelper.isGreaterThanZero(someValue)).to.equal(false);
+        });
+    });
 });
