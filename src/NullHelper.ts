@@ -11,10 +11,10 @@ export class NullHelper {
      * @returns {any} - Return the integer 0 if null or the given input otherwise
      */
     public static convertNullToZero(input: any): any {
-        if (input === null) {
-            return 0;
+        if (input !== null) {
+            return input;
         }
 
-        return input;
+        return 0;
     }
 }
