@@ -11,10 +11,6 @@
      * @returns {number} - Return the proper integer value given a true or false parameter.
      */
      public static convertBooleanToInt(value: boolean): number {
-        if (value === true) {
-            return 1;
-        }
-
-        return 0;
+        return !!value ? 1 : 0;
      }
  }
