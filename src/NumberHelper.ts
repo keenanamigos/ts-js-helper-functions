@@ -27,11 +27,7 @@
       * @returns {boolean} - Return an boolean based on if the given value is greater than or less than zero.
       */
      public static isGreaterThanZero(input: number): boolean {
-         if (input > 0) {
-             return true;
-         }
-
-         return false;
+        return input > 0;
      }
 
      /**
@@ -41,10 +37,6 @@
       * @returns {boolean} - Return an boolean based on if the given value is zero or greater.
       */
      public static isZeroOrGreater(input: number): boolean {
-         if (input >= 0) {
-             return true;
-         }
-
-         return false;
+        return input >= 0;
      }
  }
