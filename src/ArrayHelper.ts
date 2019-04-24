@@ -11,10 +11,6 @@ export class ArrayHelper {
      * @returns {boolean} - Return true or false dependent on if the array is null or empty.
      */
     public static isArrayNullOrEmpty(array: any[]): boolean {
-        if (array === null || array.length === 0) {
-            return true;
-        }
-
-        return false;
+        return !array || array.length === 0;
     }
 }

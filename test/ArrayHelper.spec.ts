@@ -10,8 +10,12 @@ describe("ArrayHelper", () => {
             expect(ArrayHelper.isArrayNullOrEmpty(someEmptyArray)).to.equal(true);
         });
 
+        it("should return true when an undefined value is passed in", () => {
+            expect(ArrayHelper.isArrayNullOrEmpty(undefined)).to.equal(true);
+        });
+
         it("should return false when an array with values is passed in", () => {
-            const nonEmptyArray: number[] = [1, 2, 3, 4, 5];
+            const nonEmptyArray = [1, 2, 3, 4, 5];
 
             expect(ArrayHelper.isArrayNullOrEmpty(nonEmptyArray)).to.equal(false);
         });
