@@ -3,8 +3,8 @@
  * @class NullHelper
  * Class to peform checks and operations on null values.
  */
-Object.defineProperty(exports, "__esModule", { value: true });
-var NullHelper = /** @class */ (function () {
+exports.__esModule = true;
+var NullHelper = (function () {
     function NullHelper() {
     }
     /**
@@ -14,10 +14,7 @@ var NullHelper = /** @class */ (function () {
      * @returns {any} - Return the integer 0 if null or the given input otherwise
      */
     NullHelper.convertNullToZero = function (input) {
-        if (input === null) {
-            return 0;
-        }
-        return input;
+        return input !== null ? input : 0;
     };
     return NullHelper;
 }());

@@ -3,8 +3,8 @@
  * @class BooleanHelper
  * Class provides static methods to perform checks and operations on boolean values
  */
-Object.defineProperty(exports, "__esModule", { value: true });
-var BooleanHelper = /** @class */ (function () {
+exports.__esModule = true;
+var BooleanHelper = (function () {
     function BooleanHelper() {
     }
     /**
@@ -14,10 +14,7 @@ var BooleanHelper = /** @class */ (function () {
      * @returns {number} - Return the proper integer value given a true or false parameter.
      */
     BooleanHelper.convertBooleanToInt = function (value) {
-        if (value === true) {
-            return 1;
-        }
-        return 0;
+        return !!value ? 1 : 0;
     };
     return BooleanHelper;
 }());

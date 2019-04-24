@@ -3,8 +3,8 @@
  * @class ObjectHelper
  * Class to perform checks and operations on objects.
  */
-Object.defineProperty(exports, "__esModule", { value: true });
-var ObjectHelper = /** @class */ (function () {
+exports.__esModule = true;
+var ObjectHelper = (function () {
     function ObjectHelper() {
     }
     /**

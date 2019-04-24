@@ -3,8 +3,8 @@
  * @class DateHelper
  * Class to perform operations on Date values
  */
-Object.defineProperty(exports, "__esModule", { value: true });
-var DateHelper = /** @class */ (function () {
+exports.__esModule = true;
+var DateHelper = (function () {
     function DateHelper() {
     }
     /**
@@ -31,8 +31,8 @@ var DateHelper = /** @class */ (function () {
      * @returns string - Return the formatted date as a string.
      */
     DateHelper.formatDate = function (month, day, year) {
-        var isMonthLessThanTen = (month < 10);
-        var isDayLessThanTen = (day < 10);
+        var isMonthLessThanTen = month < 10;
+        var isDayLessThanTen = day < 10;
         var formattedDate;
         if (isMonthLessThanTen && isDayLessThanTen) {
             formattedDate = "0" + month + "/0" + day + "/" + year;

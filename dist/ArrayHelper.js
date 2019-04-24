@@ -3,8 +3,8 @@
  * @class ArrayHelper
  * Class provides static methods to perform checks and operations on arrays
  */
-Object.defineProperty(exports, "__esModule", { value: true });
-var ArrayHelper = /** @class */ (function () {
+exports.__esModule = true;
+var ArrayHelper = (function () {
     function ArrayHelper() {
     }
     /**
@@ -14,10 +14,7 @@ var ArrayHelper = /** @class */ (function () {
      * @returns {boolean} - Return true or false dependent on if the array is null or empty.
      */
     ArrayHelper.isArrayNullOrEmpty = function (array) {
-        if (array === null || array.length === 0) {
-            return true;
-        }
-        return false;
+        return !array || array.length === 0;
     };
     return ArrayHelper;
 }());

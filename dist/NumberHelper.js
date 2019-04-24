@@ -3,8 +3,8 @@
  * @class NumberHelper
  * Class provides static methods to perform checks and operations on numbers
  */
-Object.defineProperty(exports, "__esModule", { value: true });
-var NumberHelper = /** @class */ (function () {
+exports.__esModule = true;
+var NumberHelper = (function () {
     function NumberHelper() {
     }
     /**
@@ -20,7 +20,7 @@ var NumberHelper = /** @class */ (function () {
             return Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue;
         }
         else {
-            throw new Error(minValue + " AND/OR " + maxValue + " are not valid input. Please enter Numbers greater than zero.");
+            throw new Error(minValue + " AND/OR " + maxValue + " are not valid input. Please enter values greater than zero.");
         }
     };
     /**
@@ -30,10 +30,7 @@ var NumberHelper = /** @class */ (function () {
      * @returns {boolean} - Return an boolean based on if the given value is greater than or less than zero.
      */
     NumberHelper.isGreaterThanZero = function (input) {
-        if (input > 0) {
-            return true;
-        }
-        return false;
+        return input > 0;
     };
     /**
      * @function
@@ -42,10 +39,7 @@ var NumberHelper = /** @class */ (function () {
      * @returns {boolean} - Return an boolean based on if the given value is zero or greater.
      */
     NumberHelper.isZeroOrGreater = function (input) {
-        if (input >= 0) {
-            return true;
-        }
-        return false;
+        return input >= 0;
     };
     return NumberHelper;
 }());
