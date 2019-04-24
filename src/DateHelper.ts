@@ -32,8 +32,8 @@
      * @returns string - Return the formatted date as a string.
      */
      public static formatDate(month: number, day: number, year: number): string {
-        const isMonthLessThanTen: boolean = (month < 10);
-        const isDayLessThanTen: boolean = (day < 10);
+        const isMonthLessThanTen = month < 10;
+        const isDayLessThanTen = day < 10;
         let formattedDate: string;
 
         if (isMonthLessThanTen && isDayLessThanTen) {
